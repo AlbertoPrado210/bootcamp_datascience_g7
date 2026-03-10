@@ -1,5 +1,5 @@
 from time import sleep
-from src.datos import empresas,guardar_alumnos
+from src.datos import empresas,guardar_empresas
 from src.utils import pausa,titulo,limpiar
 from src.decoradores import pantalla
 
