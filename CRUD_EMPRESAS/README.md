@@ -1,9 +1,0 @@
-crud_alumnos/ 
-├── main.py 
-├── alumnos.csv 
-└── src/ 
-    ├── init.py 
-    ├── datos.py 
-    ├── crud.py 
-    ├── decoradores.py 
-    └── utils.py
