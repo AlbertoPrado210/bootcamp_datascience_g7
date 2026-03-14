@@ -58,6 +58,9 @@ class TkAlumno:
         self.btn_eliminar = Button(frame,text='Eliminar Alumno',command=self.eliminar_alumno)
         self.btn_eliminar.grid(row=5,column=0,columnspan=2)
         
+        self.btn_editar = Button(frame,text='Editar Alumno',command=self.editar_alumno)
+        self.btn_editar.grid(row=6,column=0,columnspan=2)
+        
     def insertar_alumno(self):
         dni = self.txt_dni.get()
         nombre = self.txt_nombre.get()
@@ -73,6 +76,19 @@ class TkAlumno:
                 self.tree.delete(item)
         else:
             messagebox.showwarning("Eliminar Alumno", "Seleccione un alumno para eliminar")
+            
+    def editar_alumno(self):
+        seleccion = self.tree.selection()
+        if seleccion:
+            for item in seleccion:
+                item = seleccion[0]
+                dni = self.txt_dni.get()
+                nombre = self.txt_nombre.get()
+                email = self.txt_email.get()
+                
+                self.tree.item(item, values=(dni,nombre,email))
+        else:
+            messagebox.showwarning("Editar Alumno", "Seleccione un alumno para editar")
         
         
 app = Tk()
