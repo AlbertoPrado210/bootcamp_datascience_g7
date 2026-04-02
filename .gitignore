@@ -1,0 +1,46 @@
+# Archivos compilados y optimizados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Archivos de distribución y empaquetado
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Caché de Jupyter Notebooks (útil en ciencia de datos)
+.ipynb_checkpoints/
+
+# Archivos generados por editores de código (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos generados por el Sistema Operativo (Windows / macOS)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Entornos de utilidades externas (pytest, mypy, etc)
+.pytest_cache/
+.mypy_cache/
+.tox/
+coverage.xml
+*.cover
+
+# Logs y bases de datos locales
+*.log
+*.sqlite3
